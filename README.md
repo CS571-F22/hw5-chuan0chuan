@@ -142,15 +142,20 @@ The questions below will ask you about the design of the BadgerChat website that
 1. What model (or combination of models) best describes the navigation of your site? Justify your response.
 
 INSERT YOUR RESPONSE HERE.
+I think the fully connected model best describe my site. BadgerChat with logo is the central component. And home,login and register components link to this central component. Meanwhile, login and register component link to the page that users already login in and 
+could post on chatroom.
 
 2. Does there exist an escape hatch in this web application? If so, where/what is it? If not, what would be an appropriate escape hatch?
 
 INSERT YOUR RESPONSE HERE.
+Yes, there is an escape hatch, BadgerChat with logo. As defined, an "escpape hatch" provides users with the ability to go back to the main page in a complex structure without having to trace steps back. In our case, user can go back to homepage by clicking the adgerChat with logo, such as apple logo of apple's website.
 
 3. Does there exist a hero image in this web application? If so, where/what is it? If not, using aspects of visual design, design a hero image and paste a picture of it below. Describe where this hero image would be placed and what it would accomplish.
 
 INSERT YOUR RESPONSE HERE.
 
+A hero image is a website design term used to describe an oversized banner image at the top of a website. In our website, I think there is no an obvious and oversized image. I design one as shown below. I put this hero image in the center of my site and almost occupy the hold screen. It can grab the user’s attention as soon as they land on this page. It help user quicly know the function of my site is chat (this image is downloaded from University Website).
+!["Hero"](figures/hero.png) The picture may be better designed, I refer this one to illustrate the function of hero image.
 ___
 
 ## Bug Bounty Program
