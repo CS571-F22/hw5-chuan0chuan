@@ -44,7 +44,7 @@ function handleCreatpost(){
         if(res.status === 401){
             alert("You must be logged in to post!");
         }
-        if(res.status === 200) {
+        else if(res.status === 200) {
             return res.json();
         }
     }).then(json =>{
@@ -67,8 +67,8 @@ function Delete(msid){
         if(res.status === 401){
             alert("You must be logged in to post!");
         }
-        if(res.status === 200) {
-    return res.json()
+        else if(res.status === 200) {
+            return res.json()
         }
     }).then(json =>{
         if (json.msg) { 
@@ -95,8 +95,8 @@ function Delete(msid){
                 <>
                     {
                         /* TODO: Complete displaying of messages. */
-                        messages.map((ms) => {
-                            return<BadgerMessage key = {ms.id} {...ms}
+                        messages.forEach((ms) => {
+                            <BadgerMessage key = {ms.id} {...ms}
                             handleDelete={Delete}> 
                             </BadgerMessage>
                         })
