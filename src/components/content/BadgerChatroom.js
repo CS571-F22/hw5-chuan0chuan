@@ -5,7 +5,7 @@ import { BadgerAuthContext } from "../../context/BadgerAuthContext";
 
 export default function BadgerChatroom(props) {
 
-    const [authToken] = useContext(BadgerAuthContext);
+    const [authToken, ] = useContext(BadgerAuthContext);
     const [messages, setMessages] = useState([]);
     const [messages1, setMessages1] = useState("");
     const [messages2, setMessages2] = useState("");
@@ -44,7 +44,7 @@ function handleCreatpost(){
         if(res.status === 401){
             alert("You must be logged in to post!");
         }
-        else if(res.status === 200) {
+        if(res.status === 200) {
             return res.json();
         }
     }).then(json =>{
@@ -67,8 +67,8 @@ function Delete(msid){
         if(res.status === 401){
             alert("You must be logged in to post!");
         }
-        else if(res.status === 200) {
-            return res.json()
+        if(res.status === 200) {
+    return res.json()
         }
     }).then(json =>{
         if (json.msg) { 
@@ -95,8 +95,8 @@ function Delete(msid){
                 <>
                     {
                         /* TODO: Complete displaying of messages. */
-                        messages.forEach((ms) => {
-                            <BadgerMessage key = {ms.id} {...ms}
+                        messages.map((ms) => {
+                            return<BadgerMessage key = {ms.id} {...ms}
                             handleDelete={Delete}> 
                             </BadgerMessage>
                         })

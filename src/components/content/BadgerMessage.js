@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { BadgerUserContext } from '../../context/BadgerUserContext';
 import {useCallback} from "react";
 function BadgerMessage(props) {
-    const [username] = useContext(BadgerUserContext);
+    const [username, ] = useContext(BadgerUserContext);
     const id = useCallback(() => {
             props.handleDelete(props.id);
         }
