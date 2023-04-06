@@ -5,8 +5,8 @@ import { BadgerAuthContext } from '../../context/BadgerAuthContext';
 import { BadgerUserContext } from '../../context/BadgerUserContext';
 export default function BadgerLogin() {
     const navigate= new useNavigate();
-    const [authToken, setAuthToken] = useContext(BadgerAuthContext);
-    const [username, setUsername] = useContext(BadgerUserContext);
+    const [setAuthToken] = useContext(BadgerAuthContext);
+    const [setUsername] = useContext(BadgerUserContext);
     
     // TODO Create the login component.
     const usernameRef = useRef();

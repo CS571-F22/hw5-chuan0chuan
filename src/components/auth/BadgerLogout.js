@@ -2,8 +2,8 @@ import React, { useContext, useEffect } from 'react';
 import { BadgerAuthContext } from '../../context/BadgerAuthContext';
 
 export default function BadgerLogout() {
-    
-    const [authToken, setAuthToken] = useContext(BadgerAuthContext);
+
+    const [setAuthToken] = useContext(BadgerAuthContext);
 
     useEffect(() => {
         setAuthToken(undefined);

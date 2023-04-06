@@ -5,7 +5,7 @@ import { BadgerAuthContext } from "../../context/BadgerAuthContext";
 
 export default function BadgerChatroom(props) {
 
-    const [authToken, setAuthToken] = useContext(BadgerAuthContext);
+    const [authToken] = useContext(BadgerAuthContext);
     const [messages, setMessages] = useState([]);
     const [messages1, setMessages1] = useState("");
     const [messages2, setMessages2] = useState("");
